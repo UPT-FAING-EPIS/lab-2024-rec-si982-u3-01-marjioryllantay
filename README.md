@@ -539,6 +539,9 @@ dotnet ef database update
 func start
 ```
 
+![image](https://github.com/user-attachments/assets/33a2bfa1-4f93-4056-8141-430f3e62bd85)
+
+
 6. En el Terminal, ejecutar el siguiente comando para configurar, compilar y desplegar la aplicación.
 ```Bash
 az functionapp config appsettings set -g upt-arg-373 -n upt-afn-373 --settings FUNCTIONS_INPROC_NET8_ENABLED=1
@@ -554,6 +557,14 @@ az functionapp deployment source config-zip -g upt-arg-373 -n upt-afn-373 --src 
 
 7. En el Navegador, abrir una nueva pestaña e ingresar a la url https://upt-afn-XXX.azurewebsites.net/api/shorturl
 >Donde: XXX, id de su azure function
+
+![image](https://github.com/user-attachments/assets/886efe0f-96eb-4d5a-b710-19f94ab3ae57)
+
+![image](https://github.com/user-attachments/assets/52dd92b7-bf01-433c-a603-93a71db8f6b0)
+
+![image](https://github.com/user-attachments/assets/e94249e3-d292-4f7c-8625-5e93b156f7f3)
+
+![image](https://github.com/user-attachments/assets/ca172a28-8eef-415e-96ef-d91705f040db)
 
 ### CONSTRUCCION DE LA APLICACION - FRONTEND
 
