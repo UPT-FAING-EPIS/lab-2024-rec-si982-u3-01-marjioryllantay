@@ -157,7 +157,7 @@ namespace ShortenFunction
         /// <summary>
         /// Constructor de la clase
         /// </summary>
-        static string conexion = new ConfigurationBuilder().AddEnvironmentVariables().AddJsonFile("app.settings.json", optional:  true, reloadOnChange: true).Build().GetConnectionString("ShortenDB");
+        static string conexion = new ConfigurationBuilder().AddEnvironmentVariables().AddJsonFile("local.settings.json", optional:  true, reloadOnChange: true).Build().GetConnectionString("ShortenDB");
         public ShortenContext() : base(SqlServerDbContextOptionsExtensions.UseSqlServer(new DbContextOptionsBuilder(), conexion, o => o.CommandTimeout(300)).Options)
         {
         }
